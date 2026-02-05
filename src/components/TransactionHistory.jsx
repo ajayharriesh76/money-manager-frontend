@@ -184,21 +184,18 @@ const TransactionHistory = ({ onEdit, refreshTrigger }) => {
                 <option key={cat} value={cat}>{cat}</option>
               ))}
             </select>
-
-            <div className="flex gap-2">
+            <div className="flex gap-2 lg:col-span-2">
               <input
                 type="date"
                 value={filters.startDate}
                 onChange={(e) => setFilters({ ...filters, startDate: e.target.value })}
                 className="input-field flex-1"
-                placeholder="Start date"
               />
               <input
                 type="date"
                 value={filters.endDate}
                 onChange={(e) => setFilters({ ...filters, endDate: e.target.value })}
                 className="input-field flex-1"
-                placeholder="End date"
               />
             </div>
 
