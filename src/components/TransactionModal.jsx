@@ -58,7 +58,7 @@ const TransactionModal = ({ isOpen, onClose, onSuccess, editTransaction }) => {
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
-    setFormData({ ...formData, type: tab, category: '' });
+    setFormData({ ...formData, type: tab, category: 'Other' });
   };
 
   const handleSubmit = async (e) => {

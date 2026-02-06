@@ -2,6 +2,9 @@
 
 Modern React-based web application for managing personal finances.
 
+## Demo Video
+https://drive.google.com/file/d/1H7pDLvJy_2PhU03pI5Km-VGHo91YQ0Mr/view?usp=sharing
+
 ## Tech Stack
 
 - **Framework**: React 18.2
@@ -89,64 +92,6 @@ src/
 - Display Font: Outfit
 - Body Font: Inter
 
-## Setup Instructions
-
-### Prerequisites
-- Node.js 18+ and npm
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd money-manager-frontend
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Update API endpoint in `src/services/api.js`:
-```javascript
-const API_BASE_URL = 'http://localhost:8080/api';  // Update if needed
-```
-
-4. Start the development server:
-```bash
-npm run dev
-```
-
-The application will be available at `http://localhost:3000`
-
-## Building for Production
-
-1. Create production build:
-```bash
-npm run build
-```
-
-2. Preview production build:
-```bash
-npm run preview
-```
-
-The build output will be in the `dist/` directory.
-
-## Configuration
-
-### Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-VITE_API_BASE_URL=http://localhost:8080/api
-```
-
-Update `src/services/api.js` to use environment variables:
-```javascript
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api';
-```
 
 ## Key Components
 
@@ -191,29 +136,6 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-
-## Deployment
-
-### Deploy to Vercel
-
-1. Install Vercel CLI:
-```bash
-npm i -g vercel
-```
-
-2. Deploy:
-```bash
-vercel
-```
-
-### Deploy to Netlify
-
-1. Build the project:
-```bash
-npm run build
-```
-
-2. Deploy the `dist/` folder to Netlify
 
 ## Features Overview
 
